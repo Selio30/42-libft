@@ -6,7 +6,7 @@
 /*   By: sbarbero <sbarbero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:06:52 by sbarbero          #+#    #+#             */
-/*   Updated: 2023/04/20 21:38:21 by sbarbero         ###   ########.fr       */
+/*   Updated: 2023/05/04 21:50:06 by sbarbero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,5 +58,12 @@ void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 // copy byte string.
 void	*ft_memmove(void *dest, const void *src, size_t n);
+
+char	*ft_strchr(const char *str, int i);
+char	*ft_strrchr(const char *str, int i);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+char	*ft_strnstr(const char *s1, const char *s2, size_t n);
 
 #endif

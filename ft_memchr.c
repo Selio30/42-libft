@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbarbero <sbarbero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/19 17:46:32 by sbarbero          #+#    #+#             */
-/*   Updated: 2023/04/22 21:05:59 by sbarbero         ###   ########.fr       */
+/*   Created: 2023/05/04 21:18:41 by sbarbero          #+#    #+#             */
+/*   Updated: 2023/05/04 21:33:22 by sbarbero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dest, const char *src, size_t size)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t	destin;
-	size_t	source;
-	size_t	cont;
+	unsigned char	*s1;
+	size_t			i;
 
-	destin = ft_strlen(dest);
-	source = ft_strlen(src);
-	if (size <= destin)
-		return (source + size);
-	cont = destin;
-	while (*src != '\0' && cont < (size - 1))
-		*(dest + cont++) = *src++;
-	*(dest + cont) = '\0';
-	return (destin + source);
+	i = 0;
+	s1 = (unsigned char *) s;
+	while (i < n)
+	{
+		if (s1[i] == (unsigned char)c)
+			return (s1 + i);
+		i++;
+	}
+	return (0);
 }
