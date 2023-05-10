@@ -7,7 +7,7 @@ SOURCE	= 	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 			ft_atoi.c ft_calloc.c ft_strdup.c
 OBJECT	= $(SOURCE:.c=.o)
 
-SRC_BONUS = 
+SRC_BONUS = ft_substr.c ft_strjoin.c ft_strtrim.c
 OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 FLAGS	= -Wall -Werror -Wextra
@@ -19,20 +19,20 @@ RM		= rm -f
 all: $(NAME)
 
 $(NAME): $(OBJECT) $(INCLUDE)
-	$(LIB) $(NAME) $(OBJECT)
+	@$(LIB) $(NAME) $(OBJECT)
 
 %.o: %.c
-	gcc $(FLAGS) -c -o $@ $<
+	@gcc $(FLAGS) -c -o $@ $<
 
 clean:
-	$(RM) $(OBJECT)
+	@$(RM) $(OBJECT) $(OBJ_BONUS)
 
 fclean: clean
-	$(RM) $(NAME)
+	@$(RM) $(NAME)
 
 re: fclean all
 
-bonus: $(OBJ_BONUS) $(OBJ)
-	$(LIB) $(NAME) $(OBJ) $(OBJ_BONUS)
+bonus: $(OBJ_BONUS) $(INCLUDE)
+	@$(LIB) $(NAME) $(OBJ) $(OBJ_BONUS)
 
 .PHONY: all clean fclean re bonus comp

@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbarbero <sbarbero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/19 17:46:32 by sbarbero          #+#    #+#             */
-/*   Updated: 2023/05/10 18:25:24 by sbarbero         ###   ########.fr       */
+/*   Created: 2023/05/10 21:30:35 by sbarbero          #+#    #+#             */
+/*   Updated: 2023/05/10 21:40:11 by sbarbero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dest, const char *src, size_t size)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	destin;
-	size_t	source;
-	size_t	cont;
+	char	*newstr;
+	size_t	size;
 
-	destin = ft_strlen(dest);
-	source = ft_strlen(src);
-	if (size <= destin)
-		return (source + size);
-	cont = destin;
-	while (*src != '\0' && cont < (size - 1))
-		*(dest + cont++) = *src++;
-	*(dest + cont) = '\0';
-	return (destin + source);
+	if (!s1 || !s2)
+		return (0);
+	size = ft_strlen(s1) + ft_strlen(s2);
+	newstr = (char *)malloc(size + 1);
+	if (!newstr)
+		return (0);
+	ft_memcpy(newstr, s1, ft_strlen(s1));
+	ft_memcpy(newstr + ft_strlen(s1), s2, ft_strlen(s2) + 1);
+	return (newstr);
 }

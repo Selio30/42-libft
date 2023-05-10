@@ -6,7 +6,7 @@
 /*   By: sbarbero <sbarbero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:06:52 by sbarbero          #+#    #+#             */
-/*   Updated: 2023/05/08 14:48:01 by sbarbero         ###   ########.fr       */
+/*   Updated: 2023/05/10 21:56:33 by sbarbero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,5 +82,12 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 /* Non-standard functions */
+
+// extract substring from string.
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+// concatenate two strings into a new string (with malloc).
+char	*ft_strjoin(char const *s1, char const *s2);
+
+char	*ft_strtrim(char const *s1, char const *set);
 
 #endif
