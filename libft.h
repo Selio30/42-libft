@@ -6,7 +6,7 @@
 /*   By: sbarbero <sbarbero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:06:52 by sbarbero          #+#    #+#             */
-/*   Updated: 2023/05/10 21:56:33 by sbarbero         ###   ########.fr       */
+/*   Updated: 2023/05/11 19:37:36 by sbarbero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,23 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 // concatenate two strings into a new string (with malloc).
 char	*ft_strjoin(char const *s1, char const *s2);
-
+// trim beginning and end of string with the specified characters.
 char	*ft_strtrim(char const *s1, char const *set);
+// split string, with specified character as delimiter, an array of strings.
+char	**ft_split(char const *s, char c);
+// convert integer to ASCII string.
+char	*ft_itoa(int n);
+// create new string from modifying string with specified function.
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+// trim beginning and end of string with the specified characters.
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+// output a character to given file.
+void	ft_putchar_fd(char c, int fd);
+// output a string to given file.
+void	ft_putstr_fd(char const *s, int fd);
+// output a string to given file with newline.
+void	ft_putendl_fd(char *s, int fd);
+// output integer to given file.
+void	ft_putnbr_fd(int n, int fd);
 
 #endif
