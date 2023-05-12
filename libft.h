@@ -6,7 +6,7 @@
 /*   By: sbarbero <sbarbero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:06:52 by sbarbero          #+#    #+#             */
-/*   Updated: 2023/05/12 21:06:21 by sbarbero         ###   ########.fr       */
+/*   Updated: 2023/05/12 22:00:25 by sbarbero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,5 +107,16 @@ void	ft_putstr_fd(char const *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 // output integer to given file.
 void	ft_putnbr_fd(int n, int fd);
+
+/* Part 2 - bonuses */
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
+
+// create a new list.
+t_list	*ft_lstnew(void *content);
 
 #endif
