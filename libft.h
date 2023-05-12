@@ -6,7 +6,7 @@
 /*   By: sbarbero <sbarbero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:06:52 by sbarbero          #+#    #+#             */
-/*   Updated: 2023/05/11 19:37:36 by sbarbero         ###   ########.fr       */
+/*   Updated: 2023/05/12 21:06:21 by sbarbero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@
 # include <stdlib.h>
 # include <strings.h>
 # include <string.h>
+
+# include <limits.h>
 
 # include <unistd.h>
 # include <stdio.h>

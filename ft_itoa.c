@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sbarbero <sbarbero@student.42.fr>          +#+  +:+       +#+        */
+/*   By: usu <usu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 18:29:46 by sbarbero          #+#    #+#             */
-/*   Updated: 2023/05/11 18:52:50 by sbarbero         ###   ########.fr       */
+/*   Updated: 2023/05/12 06:58:27 by usu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_itoa(int n)
 	str = (char *) malloc (sizeof (char) * (len + 1));
 	if (!str)
 		return (0);
-		str[len--] = '\0';
+	str[len--] = '\0';
 	if (i == 0)
 		str[0] = '0';
 	if (i < 0)
