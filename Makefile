@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: sbarbero <sbarbero@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/05/15 21:19:56 by sbarbero          #+#    #+#              #
+#    Updated: 2023/05/15 21:19:58 by sbarbero         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME	= libft.a
 SOURCE	= 	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c \
 			ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c \
