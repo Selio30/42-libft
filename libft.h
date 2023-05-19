@@ -6,7 +6,7 @@
 /*   By: sbarbero <sbarbero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 18:06:52 by sbarbero          #+#    #+#             */
-/*   Updated: 2023/05/18 19:16:32 by sbarbero         ###   ########.fr       */
+/*   Updated: 2023/05/19 17:10:24 by sbarbero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,7 @@ int		ft_atoi(const char *str);
  */
 void	*ft_calloc(size_t count, size_t size);
 
-/* Funtions from <strings.h> library */
+/* Funtions from <string.h> library */
 
 /**
  * @brief Returns length of a string
@@ -170,7 +170,7 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t n);
  */
 char	*ft_strdup(const char *str);
 
-/* Functions from <string.h> library */
+/* Functions from <strings.h> library */
 
 /**
  * @brief Sets N bytes of STR string to 0
