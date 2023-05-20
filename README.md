@@ -20,8 +20,6 @@
 	<a href="#-index">Index</a>
 	<span> · </span>
 	<a href="#%EF%B8%8F-usage">Usage</a>
-	<span> · </span>
-	<a href="#-testing">Testing</a>
 </h3>
 
 ---
@@ -31,7 +29,7 @@
 > _El objetivo de este proyecto es codificar una librería C reagrupando las funciones habituales que podrá usar en todos sus otros proyectos._
 
 	🚀 TLDR: este proyecto consiste en codificar funciones básicas de C (ver más abajo), que luego se compilan
-	en una biblioteca para usar en otros proyectos del curso.
+	en una librería para usar en otros proyectos del curso.
 
 ### Functions from `<ctype.h>` library
 
@@ -93,3 +91,33 @@
 * [`ft_lstclear`](libft/ft_lstclear.c)			- delete sequence of elements of list from a starting point.
 * [`ft_lstiter`](libft/ft_lstiter.c)		  - apply function to content of all list's elements.
 * [`ft_lstmap`](libft/ft_lstmap.c)			  - apply function to content of all list's elements into new list.
+
+## 📑 Index
+
+`@root`
+
+* [**📁 libft:**](libft/)
+
+## 🛠️ Usage
+
+### Requisitos
+
+La librería está escrita en lenguaje C y, por lo tanto, necesita el compilador **`gcc`** y algunas **librerías C** estándar para ejecutarse.
+
+### Instrucciones
+
+**1. Compilando la librería**
+
+Para compilar la librería, ejecute:
+
+```shell
+$ cd libft && make
+```
+
+**2. Usándolo en tu código**
+
+Para usar las funciones de la librería en su código, simplemente incluya su encabezado:
+
+```C
+#include "libft.h"
+```
